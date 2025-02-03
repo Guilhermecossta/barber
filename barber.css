@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: "Lobster";
+    src: url('fontes/lobster/Lobster\ 1.4.otf');
+  }
+  
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .whats{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+  }
+  
+  input{
+    cursor: pointer;
+  }
+  
+  header {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  
+    .conteudo_header {
+      display: flex;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: auto;
+      align-items: center;
+  
+  
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+  
+        li {
+          margin-right: 30px;
+          font-size: 17px;
+          font-weight: 600;
+          color: rgb(48, 74, 104);
+        }
+  
+        li:hover{
+          color: red;
+          cursor: pointer;
+        }
+  
+        input {
+          padding: 10px 15px;
+          border-radius: 50px;
+          border: none;
+          background-color: rgb(204, 61, 66);
+          color: white;
+          font-size: 16.5px;
+          
+        }
+      }
+    }
+  }
+  
+  @media (max-width:650px) {
+    .conteudo_header li{
+      display: none;
+    }
+  }
+  
+  @media (max-width:920px) {
+    .conteudo_header input{
+      margin-right: 20px;
+    }
+  }
+  
+  @media (max-width:600px) {
+    .conteudo_header input{
+      padding: 5px 10px;
+      font-size: 15.5;
+    }
+  }
+  
+  .imagem {
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    background: url("imagens/barber.avif");
+    background-position: 19%;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    position: static;
+  
+    .infos {
+      margin: auto;
+      text-align: center;
+      
+  
+      p {
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+      }
+  
+      h1 {
+        color: white;
+        padding: 10px;
+        font-size: 50px;
+      }
+  
+      input {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: 1px solid black;
+      }
+    }
+  }
+  
+  @media (max-width:650px) {
+    .infos h1{
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width:700px) {
+    .infos p{
+      display: none;
+    }
+  }
+  
+  .dicas{
+    margin: 60px auto;
+    text-align: center;
+  
+    h1{
+      font-family: Lobster, arial;
+      font-size: 40px;
+      font-weight: lighter;
+      color: rgb(48, 74, 104);
+      padding: 5px;
+    }
+  }
+  
+  ins {
+    text-decoration-style: solid;
+    text-decoration-color: rgb(218, 49, 49); /* cor amarela */
+  }
+  
+  .galeria {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imagens {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .imagens .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: opacity 0.5s;
+  }
+  
+  .imagens .img.ativo {
+    display: block;
+  }
+  
+  .num{
+    font-size: 40px;
+    padding-top: 20px;
+    font-family: Lobster, Arial, Helvetica, sans-serif;
+    color: rgb(179, 8, 8);
+  }
+  
+  .explicacao{
+    font-size: 20px;
+    padding-top: 20px;
+    color: initial;
+    font-family: Helvetica, arial, sans-serif;
+  }
+  
+  
+  
+  /* ----------------- */
+  
+  .quem_somos{
+    margin-top: 100px;
+  
+    .somos{
+  
+      .qs{
+        width: 50%;
+  
+        h1{
+          padding: 30px;
+          text-align: center;
+        }
+      }
+      
+  
+      .descricao{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+  
+        .texto{
+          width: 500px;
+          text-align: left;
+          font-size: 20px;
+          margin: 10px;
+          font-weight: lighter;
+          color: rgb(48, 74, 104);
+  
+          p{
+            margin-bottom: 30px;
+          }
+        }
+  
+        .imagem2{
+          width: 50%;
+          height: 600px;
+          background-color: black;
+          margin-right: 50px;
+          background: url("imagens/barber2.avif");
+          background-size: cover;
+        }
+      }
+    }
+  }
+  
+  @media (max-width:1140px) {
+    .imagem2{
+      min-width: 100%;
+      height: 600px;
+    }
+  }
+  
+  @media (max-width:1140px) {
+    .qs{
+      min-width: 100%;
+    }
+  }
+  
+  
+  .valores{
+    background-color: rgb(48, 74, 104);
+    padding: 30px;
+  
+    .blocos{
+      display: flex;
+      margin: auto;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      justify-content: center;
+  
+      .bloco{
+        width: 200px;
+        height: 270px;
+        background-color: white;
+        padding: 10px;
+        margin: 10px 30px;
+        text-align: center;
+        border-radius: 5px;
+        font-family:  Lobster, arial;
+        font-weight: lighter;
+  
+        h2{
+          margin: 25px 0;
+          font-size: 25px;
+        }
+  
+        p{
+          font-size: 20px;
+        }
+      } 
+    } 
+  }
+  
+  .barbeiros{
+    margin: 100px auto;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+  
+    h1{
+      margin-bottom: 50px;
+    }
+    
+    .fila{
+      display: flex;
+      justify-content: center;
+  
+      .barbeiro{
+        width: 200px;
+        height: 300px;
+        background-color: black;
+        margin: 0 20px;
+        transition: 0.3s all;
+        border-radius: 3px;
+      }
+  
+      .barbeiro1{
+        background: url("imagens/");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        
+        h1{
+          text-align: center;
+          margin: auto;
+          color: white;
+          padding-top: 60px;
+        }
+  
+      }
+  
+      .barbeiro2{
+        background: url("imagens/");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        
+        h1{
+          text-align: center;
+          margin: auto;
+          color: white;
+          padding-top: 60px;
+        }
+  
+      }
+  
+      .barbeiro3{
+        background: url("imagens/");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        
+        h1{
+          text-align: center;
+          margin: auto;
+          color: white;
+          padding-top: 60px;
+        }
+        
+      }
+    }
+  }
+  
+  .barbeiro:hover{
+    transform: scale(1.1);
+    /* filter: blur(2px); */
+  }  
