@@ -1,175 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbazul</title>
-    <link rel="shortcut icon" href="imagens/LogotipoSF3.avif" type="image/x-icon">
+    <title>Document</title>
     <link rel="stylesheet" href="barber.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
 </head>
-
 <body>
-    <div class="whats"><img width="40px" src="imagens/whatsapp-symbol-logo-svgrepo-com.svg" alt=""></div>
     <header>
-        <div class="conteudo_header">
-            <div class="logo"><img width="150px" src="imagens/LogotipoSF3.avif" alt=""></div>
-            <ul>
-                <li>Inicio</li>
-                <li>Barbeiros</li>
-                <li>Contato</li>
-                <input type="submit" value="Agendar Agora">
-            </ul>
+        <div class="middle_header">
+            <div class="soon">LOGO</div>
+            <div class="cadastre"><input type="submit" value="Cadastre ou Entrar"></div>
         </div>
     </header>
-    <div class="imagem">
-        <div class="infos">
-            <div class="melhor">
-                <h1>A melhor barbearia de Natal</h1>
-            </div>
 
-            <div>
-                <p>Só na barbazul você tem o melhor serviço e melhor atendimento <br> acompanhado de uma cerveja bem
-                    gelada!</p>
-            </div>
-
-            <div>
-                <input type="submit" value="Agendar Agora">
-            </div>
+    <main>
+        <div class="wallpaper_barber">
+            
         </div>
-    </div>
-    <div class="dicas">
-        <div class="agendar">
-            <h1><ins>Para agendar é muito fácil:</ins></h1>
-        </div>
-        <div class="galeria">
-            <div class="imagens">
-                <div class="img">
-                    <div class="num">
-                        01.
-                        <div class="explicacao">
-                            Escolha o serviço para agendamento
-                        </div>
-                    </div>
-                </div>
-
-                <div class="img">
-                    <div class="num">
-                        02.
-                        <div class="explicacao">
-                            Escolha a unidade e horário
-                        </div>
-                    </div>
-                </div>
-                <div class="img">
-                    <div class="num">
-                        03.
-                        <div class="explicacao">
-                            Defina o barbeiro que você preferir
-                        </div>
-                    </div>
-                </div>
-                <div class="img">
-                    <div class="num">
-                        04.
-                        <div class="explicacao">
-                            Preencha seus dados e confirme
-                        </div>
-                    </div>
-                </div>
-                <div class="img">
-                    <div class="num">
-                        05.
-                        <div class="explicacao">
-                            Pronto! Agendamento realizado
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            const galeria = document.querySelector('.galeria');
-            const imagens = galeria.querySelector('.imagens');
-            const imagensArray = Array.from(imagens.children);
-            let indiceAtual = 0;
-
-            imagensArray[indiceAtual].classList.add('ativo');
-
-            setInterval(() => {
-                imagensArray[indiceAtual].classList.remove('ativo');
-                indiceAtual++;
-                if (indiceAtual >= imagensArray.length) {
-                    indiceAtual = 0;
-                }
-                imagensArray[indiceAtual].classList.add('ativo');
-            }, 2000);
-        </script>
-    </div>
-
-    <div class="quem_somos">
-        <div class="somos">
-            <div class="qs">
-                <h1>Quem somos</h1>
-            </div>
-            <div class="descricao">
-                <div class="imagem2"></div>
-                <div class="texto">
-                    <p>
-                    <p>O nome Barbazul surgiu espontaneamente entremeio a inúmeras conversas entre Victor e seu pai,
-                        acompanhados sempre de uma boa cerveja. Esta marca resume a sua profissão preferida, sua origem
-                        - Belo Horizonte - e seu time de coração - Cruzeiro Esporte Clube.</p>
-                    <p>A Barbazul nasceu naturalmente do prazer que tiveram pai e filho quando saíam para cortar cabelo,
-                        fazer a barba e tomar uma boa cerveja, todos os sábados pela manhã.</p>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="valores">
-        <div class="blocos">
-            <div class="bloco missao">
-                <h2><ins>Missão</ins></h2>
-                <p style="font-family: Lato, Arial, Helvetica, sans-serif; font-weight: 400;">
-                    Proporcionar o melhor atendimento ao público masculino, com serviços surpreendentes e equipe
-                    qualificada.
-                </p>
-            </div>
-            <div class="bloco visao">
-                <h2><ins>Visão</ins></h2>
-                <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 400;">Ser reconhecida como uma empresa que oferece o
-                    melhor serviço no ramo de barbearia.</p>
-            </div>
-            <div class="bloco valor">
-                <h2><ins>Valores</ins></h2>
-                <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 400;">
-                    Atendimento simples e eficaz, compromisso com nossos clientes, orgulho de ser Barbazul, trabalho em
-                    equipe e sustentabilidade social.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="barbeiros">
-        <div>
-            <h1>Barbeiros</h1>
-        </div>
-        <div class="fila">
-            <div class="barbeiro barbeiro1">
-                <h1></h1>
-            </div>
-            <div class="barbeiro barbeiro2">
-                <h1></h1>
-            </div>
-            <div class="barbeiro barbeiro3">
-                <h1></h1>
-            </div>
-        </div>
-
-    </div>
+    </main>
 </body>
-
 </html>
